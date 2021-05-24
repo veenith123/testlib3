@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+html,body{
+  margin: 0;
+  padding: 0;
+  background-image: url("images/bgblack.png");
+  background-size: cover;
+  width: 127%;
+  height: 127%;
+  min-zoom: 90%;
+  max-zoom: 110%;
+  overflow: hidden;
+}
+h1{
+font-family: "Cabin Sketch", fantasy;
+color: rgb(251, 255, 0);
+margin-left: 630px;
+margin-top: 10px;
+font-size:120px;
+}
+.instructions{
+  font-family: "Cabin Sketch", fantasy;
+  color: rgb(255, 58, 212);
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: -180px;
+}
+.inst{
+  font-family: "Cabin Sketch", fantasy;
+  color: rgb(255, 147, 58);
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+.reading{
+  font-family: "Cabin Sketch", fantasy;
+  color: rgb(255, 58, 58);
+  margin-left: 80px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.para1{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(0, 183, 255);
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: -20px;
+
+}
+.para2{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(255, 107, 235); 
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.MeaningWord{
+visibility: hidden;
+}
+.meaningword{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(0, 242, 250); 
+    font-size: 30px;
+    margin-left: 500px;
+    margin-top: -535px;
+}
+.string{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(0, 173, 241); 
+    font-size: 30px;
+    margin-left: 500px;
+}
+.stringtext{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(255, 52, 137); 
+    font-size: 30px;
+    margin-left: 500px; 
+}
+.caper{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(0, 173, 241); 
+    font-size: 30px;
+    margin-left: 500px;
+}
+.capertext{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(255, 52, 137); 
+    font-size: 30px;
+    margin-left: 500px;
+}
+
+.video{
+    transform: scale(0.55);
+    margin-left: 250px;
+    margin-top: -780px;
+    
+}
+.left{
+transform: scale(0.6);
+margin-top: -342px;
+margin-left: -335px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.right{
+transform: scale(0.6);
+margin-top: -96px;
+margin-left: 1425px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+  .skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 0%;
+  }
+  .bar .progress-line.css span{
+    width: 0%;
+  }
+  .bar .progress-line.jquery span{
+    width: 0%;
+  }
+  .bar .progress-line.python span{
+    width: 0%;
+  }
+  
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "0%";
+  }
+  .progress-line.css span::after{
+    content: "0%";
+  }
+  .progress-line.jquery span::after{
+    content: "0%";
+  }
+  .progress-line.python span::after{
+    content: "0%";
+  }
+
+
+  @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+/* html {
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+} */
+

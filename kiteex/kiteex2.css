@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/Chapters.htmls/kite/images/bgblack.png");
+    background-size: cover;
+    width: 125.5%;
+    height: 125.5%;
+    min-zoom: 90%;
+    max-zoom: 110%;
+    overflow: hidden;
+  }
+.video{
+transform: scale(0.68);
+margin-top: 80px;
+margin-left: -165px;
+}
+h1{
+    font-family: "Cabin Sketch", fantasy;
+    color: rgb(251, 255, 0);
+    margin-top: -1205px;
+    margin-left: 630px;
+    font-size: 80px;
+}
+.right{
+    transform: scale(0.7);
+    margin-top: -95px;
+    margin-left: 1980px;
+    }
+
+.left{
+transform: scale(0.7);
+margin-top: -60px;
+margin-left: -420px;
+}
